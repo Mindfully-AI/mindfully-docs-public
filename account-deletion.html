@@ -3,6 +3,16 @@
 <head>
     <title>Redirecting...</title>
     <meta http-equiv="refresh" content="0; url=mailto:thijs@mindfully.rest?subject=App Deletion Request&body=Please include your account details and the reason for deletion.">
+    <script type="text/javascript">
+        window.onload = function() {
+            // Attempt to open the mailto link
+            window.location.href = 'mailto:your_email@example.com?subject=App Deletion Request&body=Please include your account details and the reason for deletion.';
+            // Redirect to an alternative page or show a message if the mailto fails
+            setTimeout(function() {
+                window.location.href = '/alternative-page-or-message';
+            }, 5000); // Adjust time as needed
+        };
+    </script>
 </head>
 <body>
     <p>If you are not redirected, <a href="mailto:thijs@mindfully.rest?subject=App Deletion Request&body=Please include your account details and the reason for deletion.">click here to send us an email</a>.</p>
